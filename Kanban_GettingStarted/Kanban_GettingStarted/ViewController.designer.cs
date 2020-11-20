@@ -5,7 +5,7 @@
 //
 using Foundation;
 
-namespace Chart_GettingStarted
+namespace Kanban_GettingStarted
 {
 	[Register("ViewController")]
 	partial class ViewController

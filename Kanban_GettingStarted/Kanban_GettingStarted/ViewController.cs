@@ -8,7 +8,7 @@ using Foundation;
 using Syncfusion.SfKanban.iOS;
 using UIKit;
 
-namespace Chart_GettingStarted
+namespace Kanban_GettingStarted
 {
     public partial class ViewController : UIViewController
     {

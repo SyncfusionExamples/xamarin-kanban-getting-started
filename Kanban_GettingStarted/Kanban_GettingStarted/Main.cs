@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace Chart_GettingStarted
+namespace Kanban_GettingStarted
 {
 	public class Application
 	{

@@ -3,45 +3,16 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace Chart_GettingStarted
+namespace Kanban_GettingStarted
 {
     public class DataModel
     {
-        public DateTime dateTime = new DateTime(2020, 6, 10);
-        
-        public Random random = new Random();
-
-        public ObservableCollection<ChartDataModel> Data { get; set; }
-
-        public ObservableCollection<ChartDataModel> Data1 { get; set; }
-
         public ObservableCollection<KanbanModel> Cards { get; set; }
 
         public List<object> IList;
 
-
         public DataModel()
         {
-            Data = new ObservableCollection<ChartDataModel>()
-            {
-                new ChartDataModel(){XValue = "Housing", YValue = 330},
-                new ChartDataModel(){XValue = "Transportation", YValue = 80},
-                new ChartDataModel(){XValue = "Education", YValue = 460},
-                new ChartDataModel(){XValue = "Electronics", YValue = 150},
-            };
-
-            //Data = new ObservableCollection<ChartDataModel>()
-            //{
-            //    new ChartDataModel(){ Date = dateTime, YValue = 8339  },
-            //    new ChartDataModel(){ Date = dateTime.AddMonths(1), YValue = 11903  },
-            //    new ChartDataModel(){ Date = dateTime.AddMonths(2), YValue = 11650  },
-            //    new ChartDataModel(){ Date = dateTime.AddMonths(3), YValue = 6808  },
-            //    new ChartDataModel(){ Date = dateTime.AddMonths(4), YValue = 3769  },
-            //    new ChartDataModel(){ Date = dateTime.AddMonths(5), YValue = 2952  },
-            //    new ChartDataModel(){ Date = dateTime.AddMonths(6), YValue = 2673  },
-            //    new ChartDataModel(){ Date = dateTime.AddMonths(7), YValue = 2150  },
-            //};
-
             Cards = new ObservableCollection<KanbanModel>();
 
             IList = new List<object>() { "Open", "Test", "Close", "InProgress" };
